@@ -9,11 +9,11 @@ package gestionMaterialPrestamo.DTO;
 public class toDTOServiceImpl implements toDTOService {
 
 	@Override
-	public alumnoDTO alumnoaDTO(String numAlum, String nombre, String numTlf) {
+	public alumnoDTO alumnoaDTO(String nombre, String numTlf) {
 
-		
+		alumnoDTO alumnoaDTO = new alumnoDTO(nombre, numTlf);
 
-		return ;
+		return alumnoaDTO;
 	}
 
 }

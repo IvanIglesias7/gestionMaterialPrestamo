@@ -7,9 +7,8 @@ public class alumnoDTO {
 	private String nombre;
 	private String numTlf;
 	
-	public alumnoDTO(String numAlum, String nombre, String numTlf) {
+	public alumnoDTO(String nombre, String numTlf) {
 		super();
-		this.numAlum = numAlum;
 		this.nombre = nombre;
 		this.numTlf = numTlf;
 	}

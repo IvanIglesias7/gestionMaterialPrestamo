@@ -15,12 +15,13 @@
 	<!-- Se activa el uso de anotaciones en las clases bean -->    
     <context:annotation-config></context:annotation-config>
     <!-- Se define en qué paquete están las clases que podrán tener anotaciones -->
-    <context:component-scan base-package="edu.hibernate.dao, edu.hibernate.impl, edu.hibernate.controlador"></context:component-scan>
+    <context:component-scan base-package="gestionMaterialPrestamo.Controller, gestionMaterialPrestamo.DAL,gestionMaterialPrestamo.DTO, 
+    gestionMaterialPrestamo.Impl"></context:component-scan>
 		
 	<!-- Se configura la configuración para la conexión a base de datos -->
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="org.postgresql.Driver"></property>	
-		<property name="url" value="jdbc:postgresql://localhost:5432/bd_gestionMaterialPrestamo"></property>
+		<property name="url" value="jdbc:postgresql://localhost:5432/bd_gestorMaterialPrestamo"></property>
 		<property name="username" value="postgres"></property>
 		<property name="password" value="1234"></property>
 	</bean>
