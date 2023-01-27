@@ -2,16 +2,19 @@ package gestionMaterialPrestamo.DAL;
 
 import javax.persistence.*;
 
-/*
- * Entidad que apunta a la tabla alumnos de la base de datos. 
-  */
+/**
+ * NOTA: Los DAO no deben tener ningun constructor(excepto el by default)
+ * @author csi20-iiglhez Entidad que apunta a la tabla alumnos de la base de
+ *         datos.
+ */
 @Entity
 @Table(name = "alumnos", schema = "dlk_MaterialesPrestamo")
 public class alumnos {
 
 	// ATRIBUTOS
 
-	@Id // Indica que es un PrimaryKey
+	@Id
+	@GeneratedValue
 	private String numAlum;
 
 	@Column(name = "nombre")
@@ -48,4 +51,5 @@ public class alumnos {
 	public void setNumTlf(String numTlf) {
 		this.numTlf = numTlf;
 	}
+
 }

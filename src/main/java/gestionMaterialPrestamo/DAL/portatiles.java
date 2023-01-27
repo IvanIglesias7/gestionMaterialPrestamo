@@ -11,8 +11,8 @@ public class portatiles {
 
 	// ATRIBUTOS
 
-	@Id // Indica que es un PrimaryKey
-	@Column(name = "portatil_id")
+	@Id
+	@GeneratedValue
 	int portatil_id;
 
 	@Column(name = "marca")
